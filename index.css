@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+}
+
+
+#con {
+    background: rgb(133, 198, 220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 70%;
+}
+
+#main {
+    display: flex;
+    height: 65%;
+    width: 90%;
+    align-items: center;
+}
+
+#show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+#user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 50%;
+
+}
+
+#userShowing {
+    font-size: 25px;
+    display: flex;
+    width: 90%;
+    height: 90%;
+    background: white;
+}
+
+#textArea {
+    resize: none;
+    width: 80%;
+    height: 70%;
+    outline: none;
+    font-size: 20px;
+    border: none;
+    padding: 24px;
+
+}
+
+
+#button {
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    background: rgb(98, 143, 227);
+    color: white;
+    font-size: 20px;
+    transition: 500ms;
+}
+
+#button:hover {
+    background: rgb(75, 65, 180);
+}
+
+.mic {
+    width: 30px;
+    height: 30px;
+
+    background: url("speakerImage.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.options {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    background: white;
+}
+
+#Users {
+    font-size: 14px;
+    outline: none;
+    padding: 10px;
+    overflow-y: hidden;
+    border: none;
+
+}
+
+
+#UserShow {
+    font-size: 14px;
+    outline: none;
+    padding: 10px;
+    overflow-y: hidden;
+    border: none;
+
+}
+
+#actualResultView {
+    padding-left: 50px;
+    padding-top: 20px;
+}

@@ -28,6 +28,7 @@ body {
     height: 65%;
     width: 90%;
     align-items: center;
+    background: transparent;
 }
 
 #show {
@@ -37,14 +38,15 @@ body {
     align-items: center;
     width: 50%;
     height: 100%;
+    background: transparent;
 }
 
 #user {
+    background: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     height: 100%;
     width: 50%;
 
@@ -59,13 +61,16 @@ body {
 }
 
 #textArea {
+    background: white;
     resize: none;
-    width: 80%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
     outline: none;
-    font-size: 20px;
+    font-size: 22px;
     border: none;
-    padding: 24px;
+    padding-top: 20px;
+    padding-left: 20px;
+    box-sizing: border-box;
 
 }
 
@@ -76,7 +81,7 @@ body {
     border-radius: 10px;
     outline: none;
     border: none;
-    margin-top: 10px;
+    margin-top: 20px;
     background: rgb(98, 143, 227);
     color: white;
     font-size: 20px;
@@ -88,20 +93,29 @@ body {
 }
 
 .mic {
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
 
     background: url("speakerImage.png");
     background-position: center;
     background-size: cover;
 }
 
+.copy {
+    width: 25px;
+    height: 25px;
+    background: url("copyIcon.png");
+    background-size: cover;
+    background-position: center;
+}
 
 .options {
     display: flex;
     width: 90%;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     background: white;
+    border-top: 2px solid rgb(170, 165, 165);
 }
 
 #Users {

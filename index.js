@@ -108,6 +108,8 @@ const button = document.getElementById("button")
 const show = document.querySelector("#actualResultView")
 const mic1 = document.getElementById("mic1")
 const mic2 = document.getElementById("mic2")
+const copyIcon1 = document.getElementById("copy1")
+const copyIcon2 = document.getElementById("copy2")
 let answerValue;
 options2.insertAdjacentHTML('beforeend', `<option value="hi-IN">Hindi</option>`)
 options.insertAdjacentHTML('beforeend', `<option value="en-GB">English</optsion>`)
@@ -151,4 +153,20 @@ mic2.addEventListener("click", () => {
     utternance = new SpeechSynthesisUtterance(answerValue)
     utternance.lang = options2.value
     speechSynthesis.speak(utternance)
+})
+
+
+
+copyIcon1.addEventListener("click", () => {
+    console.log(input.value)
+
+    navigator.clipboard.writeText(input.value);
+    window.alert("text Copied!")
+})
+
+copyIcon2.addEventListener("click", () => {
+    console.log(show.textContent)
+
+    navigator.clipboard.writeText(show.textContent);
+    window.alert("text Copied!")
 })
